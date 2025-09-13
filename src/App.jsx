@@ -22,7 +22,7 @@ function App() {
     const searchMeal = (e)=>{
       if(e.key=="Enter")
         {
-        fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         .then(res=>res.json())
         .then(data=>{
             setMyMeal(data.meals)
